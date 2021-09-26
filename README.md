@@ -5,4 +5,4 @@
 ## Steps
 
 * Install @nrwl/angular
-- - npm install --save-dev @nrwl/angular 
+  - npm install --save-dev @nrwl/angular 
