@@ -1,12 +1,12 @@
+import { TodoListComponent } from './../components/todo-list/todo-list.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { HelloComponent } from '../components/hello/hello.component';
 
 import { RemoteEntryComponent } from './entry.component';
 
 @NgModule({
-  declarations: [RemoteEntryComponent, HelloComponent],
+  declarations: [RemoteEntryComponent, TodoListComponent],
   imports: [
     BrowserModule,
     RouterModule.forChild([

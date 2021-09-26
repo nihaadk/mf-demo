@@ -1,0 +1,12 @@
+<div class="w3-container w3-margin-top">
+    <div class="w3-card-4">
+        <header class="w3-container w3-blue">
+            <h4>Todo List</h4>
+        </header>
+        <ul class="w3-ul w3-hoverable">
+            <li *ngFor="let todo of todos">
+                {{ todo.title }}
+            </li>
+        </ul>
+    </div>
+</div>

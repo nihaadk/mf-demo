@@ -2,9 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-mfe-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: ``
 })
-export class AppComponent {
-  title = 'pr2';
-}
+export class AppComponent {}

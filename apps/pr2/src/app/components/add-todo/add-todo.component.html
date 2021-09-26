@@ -1,0 +1,14 @@
+<div class="w3-container w3-margin-top">
+    <div class="w3-card">
+        <header class="w3-container w3-purple">
+            <h4>Add Todo</h4>
+        </header>
+        <form [formGroup]="form" (ngSubmit)="addNewTodo()" class="w3-container w3-padding-16">
+
+            <label>Title</label>
+            <input formControlName="title" class="w3-input" type="text">
+
+            <button type="submit" class="w3-button w3-purple w3-margin-top">Save</button>
+        </form>
+    </div>
+</div>

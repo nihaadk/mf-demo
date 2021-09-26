@@ -12,10 +12,12 @@ export class TodoService {
     return this.todos;
   }
 
-  addTodo() {
+  addTodo(title: string) {
     this.todos.push({
-      title: `New todo ${Math.floor(Math.random() * 1000)}`,
+      title: `${title} ${Math.floor(Math.random() * 1000)}`,
     });
+    console.log(this.todos);
+    
   }
 
 }

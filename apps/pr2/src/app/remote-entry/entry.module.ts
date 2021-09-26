@@ -1,14 +1,17 @@
+import { AddTodoComponent } from './../components/add-todo/add-todo.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { HelloComponent } from '../components/hello/hello.component';
 
 import { RemoteEntryComponent } from './entry.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [RemoteEntryComponent, HelloComponent],
+  declarations: [RemoteEntryComponent, AddTodoComponent],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild([
       {
         path: '',
