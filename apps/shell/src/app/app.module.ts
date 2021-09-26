@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { GlobalNavigationComponent } from './components/global-navigation/global-navigation.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, GlobalNavigationComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
