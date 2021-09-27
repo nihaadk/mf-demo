@@ -29,14 +29,14 @@
   nx run-many --target=serve --all --parallel
   ```
 
-6. Created shared angular:lib 
+6. Install  @nrwl/nest
   ```
-  nx g @nrwl/angular:lib shared/data
+  npm install -D @nrwl/nest
   ```
 
-7. Added service in shared angular:lib 
+7. Creaded api 
   ```
-  nx g @nrwl/angular:service tasks --project=shared-data
+  nx generate @nrwl/nest:application api
   ```
 
   
