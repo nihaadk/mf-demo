@@ -4,7 +4,6 @@ export interface Todo {
   title: string;
 }
 
-
 @Component({
   selector: 'ng-mfe-todo-list',
   templateUrl: './todo-list.component.html',
