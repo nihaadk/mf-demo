@@ -4,14 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { RemoteEntryComponent } from './entry.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [RemoteEntryComponent, AddTodoComponent],
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
     RouterModule.forChild([
       {
         path: '',
