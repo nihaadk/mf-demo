@@ -22,6 +22,7 @@ export class AddTodoComponent implements OnInit {
   addNewTodo() {
     const title: string = this.form.value.title;
     console.log(title);
+    
   }
 
 }

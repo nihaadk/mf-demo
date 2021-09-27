@@ -3,14 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [ AppComponent ],
 	imports: [
 		BrowserModule,
-		FormsModule,
-    	ReactiveFormsModule,
 		RouterModule.forRoot(
 			[
 				{
