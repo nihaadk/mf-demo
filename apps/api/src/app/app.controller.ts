@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 
 import { AppService } from './app.service';
+import { Todo } from './interfaces/todo.interface';
 
 @Controller('todos')
 export class AppController {
@@ -12,8 +13,9 @@ export class AppController {
   }
 
   @Post()
-  createdTodo(@Body() todoTitle: string) {
-    this.appService.setTodo(todoTitle);
+  createdTodo(@Body() todo: Todo) {
+    this.appService.setTodo(todo.title);
+    return todo;
   }
 
 

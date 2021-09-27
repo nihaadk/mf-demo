@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { AddTodoComponent } from './../components/add-todo/add-todo.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [RemoteEntryComponent, AddTodoComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forChild([
