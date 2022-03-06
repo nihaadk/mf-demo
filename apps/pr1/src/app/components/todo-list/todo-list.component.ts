@@ -19,6 +19,20 @@ export class TodoListComponent implements OnInit, OnDestroy {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
+
+    window.addEventListener(
+      'MyEventType',
+      function (event: CustomEvent) {
+        alert(event.detail);
+      },
+      false
+    );
+
+
+    this.fetchData();
+  }
+
+  private fetchData(): void {
     this.subscription.add(
       this.http.get(environment.api + 'todos').subscribe((todos: Todo[]) => {
         console.log(todos);

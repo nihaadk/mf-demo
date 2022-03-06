@@ -26,6 +26,11 @@ export class AddTodoComponent implements OnInit, OnDestroy {
   }
 
   addNewTodo() {
+
+    var evt = new CustomEvent("MyEventType", {detail: "This is my custome event"});
+    window.dispatchEvent(evt);
+
+
     const title: string = this.form.value.title;
     this.subscription.add(
       this.http.post(environment.api + 'todos', {title }).subscribe((res) => {
